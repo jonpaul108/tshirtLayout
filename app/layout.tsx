@@ -1,6 +1,7 @@
 import "@mantine/core/styles.css";
 import React from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
+import "@mantine/carousel/styles.css";
 import { theme } from "../theme";
 
 export const metadata = {
