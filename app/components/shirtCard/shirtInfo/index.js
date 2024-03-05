@@ -22,15 +22,15 @@ export default function ShirtInfo() {
       </Card.Section>
       <Stack gap={30}>
         <Group gap={15} justify="space-between" mt="lg">
-          <Title fw={800} order={1}>
+          <Title fw={800} order={2} fz="40">
             Some info about the shirt
           </Title>
 
-          <Text fz="lg" fw={500}>
+          <Text fz="xl" fw={600}>
             $25.00
           </Text>
         </Group>
-        <Text>Description Text that should be under the title</Text>
+        <Text fz="lg">Description Text that should be under the title</Text>
         <Button
           radius="sm"
           style={{
@@ -41,7 +41,7 @@ export default function ShirtInfo() {
           }}
         >
           <Group justify="space-between" style={{ width: "100%" }}>
-            <Text fw={700}>SHOP</Text>
+            <Text fz="xl" fw={800}>SHOP</Text>
             <IconArrowRight></IconArrowRight>
           </Group>
         </Button>

@@ -1,9 +1,11 @@
 "use client"
-import { Menu, Group, Center, Burger, Container } from "@mantine/core";
+import { Menu, Group, Center, Burger, Container, Text } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconChevronDown } from "@tabler/icons-react";
+import { Anton} from "next/font/google";
 import classes from "./styles.module.css";
 
+const anton = Anton({ weight: "400",subsets: ["latin"] });
 const links = [
   { link: "/about", label: "Features" },
   { link: "/about", label: "About" },
@@ -57,9 +59,14 @@ export default function HeaderMenu() {
 
   return (
     <header className={classes.header}>
-      <Container size="lg" style={{width:"100%"}}>
+      <Container size="lg" style={{ width: "100%" }}>
         <div className={classes.inner}>
-          <IconChevronDown size={28} />
+          <Text
+            className={anton.className}
+            fz={100}>
+              JKCO.
+          </Text>
+
           <Group gap={5} visibleFrom="sm">
             {items}
           </Group>

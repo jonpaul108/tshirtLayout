@@ -3,6 +3,9 @@ import React from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import "@mantine/carousel/styles.css";
 import { theme } from "../theme";
+import { Anton } from "next/font/google";
+
+const anton = Anton({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Mantine Next.js template",
@@ -21,7 +24,7 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider  theme={{fontFamily: "Robot", headings:{fontFamily:"Anton"}}}>{children}</MantineProvider>
       </body>
     </html>
   );
