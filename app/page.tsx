@@ -1,6 +1,10 @@
-import ShirtCard from "./components/shirtCard";
+import Header from "./components/Header";
+import ShirtGrid from "./components/shirtGrid";
+import Footer from "./components/Footer";
 export default function HomePage() {
   return <div>
-    <ShirtCard></ShirtCard>
+    <Header></Header>
+    <ShirtGrid></ShirtGrid>
+    <Footer></Footer>
   </div>;
 }

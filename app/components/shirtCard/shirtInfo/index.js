@@ -12,7 +12,7 @@ export default function ShirtInfo() {
       radius="md"
       padding="xl"
       style={{
-        maxWidth: "40rem",
+        // maxWidth: "40rem",
         minWidth: "15rem",
         backgroundColor: "#e9e6ed",
       }}
